@@ -1,5 +1,8 @@
 from pathlib import Path
 
+import rest_framework
+import rest_framework.permissions
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -16,6 +19,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -47,6 +51,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "testvoe.wsgi.application"
 
+
+REST_FRAMEWORK = {"DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"]}
 
 DATABASES = {
     "default": {
