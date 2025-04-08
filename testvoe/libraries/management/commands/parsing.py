@@ -3,6 +3,8 @@ import os
 
 from django.core.management.base import BaseCommand, CommandError
 
+from ...constansts import JSON_INDENT
+
 
 class Command(BaseCommand):
     help = "The command simplifies loading data from JSON for Django ORM operation"
@@ -40,7 +42,7 @@ class Command(BaseCommand):
                 for obj in data:
                     info = {
                         "pk": obj["data"]["order"],
-                        "model": "events.library",
+                        "model": "libraries.library",
                         "fields": {
                             "full_name": obj["data"]["full_name"],
                             "region": obj["data"]["region"],
@@ -54,7 +56,7 @@ class Command(BaseCommand):
                     content.append(info)
 
             with open(new_file_path, "w", encoding="utf8") as new_file:
-                json.dump(content, new_file, indent=4)
+                json.dump(content, new_file, indent=JSON_INDENT)
 
             self.stdout.write(
                 self.style.SUCCESS(

@@ -1,4 +1,4 @@
- - Create custom command `parsing <name file>`
- - Model
+ - Enable specification generation
+ - Create a view and url
 
   
