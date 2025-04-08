@@ -12,4 +12,4 @@ Data after:
       "inter_budget_transfer_amount": 5000000
     }
 ```
-Команда упрощяет загрузку данных из JSON для работы Django ORM
+The command simplifies loading data from JSON for Django ORM operation
