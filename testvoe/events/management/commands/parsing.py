@@ -17,7 +17,7 @@ class Command(BaseCommand):
 
         if not os.path.exists(old_file_path):
             raise CommandError(f"Old file '{old_file_path}' does not exist.")
-        
+
         if os.path.exists(new_file_path):
             raise CommandError(f"New file '{new_file_path}' already exists.")
 
