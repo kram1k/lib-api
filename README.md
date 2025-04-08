@@ -1,1 +1,15 @@
 # testovoe-al
+
+## Custom command `parsing <name file>`:
+Data after:
+```
+"data": {
+      "order": 1,
+      "full_name": "Myниципальное казенное учреждение культуры «Межпоселенческая централизованная библиотечная система» МО «Кошехабльский район» Детская библиотека",
+      "region": "Республика Адыгея (Адыгея)",
+      "address": "Республика Адыгея,\r\nКошехабльский район, аул Кошехабль, ул.\r\nСоветская, дом 55\r\n",
+      "year": 2019,
+      "inter_budget_transfer_amount": 5000000
+    }
+```
+The command simplifies loading data from JSON for Django ORM operation
