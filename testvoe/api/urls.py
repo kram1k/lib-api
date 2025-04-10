@@ -7,7 +7,7 @@ app_name = "api"
 
 router = DefaultRouter()
 
-router.register("lib", LibraryViewSet, basename="library")
+router.register(r"lib", LibraryViewSet, basename="library")
 
 urlpatterns = [
     path("", include(router.urls)),
