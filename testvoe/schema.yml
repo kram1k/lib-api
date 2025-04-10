@@ -1,7 +1,0 @@
-openapi: 3.0.3
-info:
-  title: Testovoe API
-  version: 1.0.0
-  description: Model municipal libraries
-paths: {}
-components: {}
