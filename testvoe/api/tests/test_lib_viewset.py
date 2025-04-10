@@ -4,6 +4,8 @@ from rest_framework import status
 from rest_framework.test import APIClient
 from libraries.models import Library
 from api.serializers import LibrarySerializer
+from django.contrib.auth import get_user_model
+
 
 pytestmark = pytest.mark.django_db
 
@@ -26,7 +28,6 @@ def api_client():
 
 @pytest.fixture
 def user():
-    from django.contrib.auth import get_user_model
     User = get_user_model()
     return User.objects.create_user(
         username="testuser",
