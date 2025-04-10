@@ -4,8 +4,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from .constansts import (MAX_FIELD_LEN, MAX_NAME_LEN, MAX_YEAR, MIN_YEAR,
-                         SHORT_NAME_LEN)
+from .constansts import MAX_FIELD_LEN, MAX_NAME_LEN, MAX_YEAR, MIN_YEAR, SHORT_NAME_LEN
 
 
 class Library(models.Model):

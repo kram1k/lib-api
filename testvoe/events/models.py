@@ -11,9 +11,7 @@ class Library(models.Model):
     address = models.CharField(_("Адрес"), max_length=50)
     year = models.IntegerField(min_value=1000, max_value=2100)
     inter_budget_transfer_amount = models.IntegerField(
-        _(
-            "Размер иного межбюджетного трансферта руб"
-        )
+        _("Размер иного межбюджетного трансферта руб")
     )
 
     class Meta:
@@ -21,8 +19,4 @@ class Library(models.Model):
         verbose_name_plural = "Библиотеки"
 
     def __str__(self):
-        return shorten(
-            self.name,
-            width=40,
-            placeholder=" ..."
-        )
+        return shorten(self.name, width=40, placeholder=" ...")
