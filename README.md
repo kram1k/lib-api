@@ -10,9 +10,9 @@
   `cd testvoe/` 
 - Установка зависимостей
   `pip install -r requirements.txt`
->  Преобразование JSON схемы, скаченной с [портала открытых данных](https://opendata.mkrf.ru/opendata/7705851331-model_municipal_libraries), в фикстуру.
->  Загрузка полученной фикстуры в базу данных.
->  Запуск сервера
+>  Преобразование JSON схемы, скаченной с [портала открытых данных](https://opendata.mkrf.ru/opendata/7705851331-model_municipal_libraries), в фикстуру. <br>
+>  Загрузка полученной фикстуры в базу данных. <br>
+>  Запуск сервера <br>
 ```
 python manage.py parsing -o data/data.json -n data/new.json
 python manage,py loaddata new.json
