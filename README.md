@@ -1,5 +1,7 @@
 # testovoe-al
-Запуск проекта:
+Docker образ:
+https://hub.docker.com/r/kramik/my-lib
+Запуск проекта локально:
 - Создание виртуального окружения
   `python -3.13 -m venv venv`
 - Активация виртуального окружения
