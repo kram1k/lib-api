@@ -60,6 +60,6 @@ Data after:
 Команда упрощает загрузку данных из JSON для работы с Django ORM
 
 ## Документация:
-Swagger:  `http://127.0.0.1:8000/api/docs/swagger-ui/`
+Swagger:  `http://127.0.0.1:8000/api/docs/swagger-ui/` <br>
 Redoc:  `http://127.0.0.1:8000/api/docs/redoc/`
 
