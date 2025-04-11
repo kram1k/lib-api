@@ -13,4 +13,4 @@ class LibraryViewSet(viewsets.ModelViewSet):
     authentication_classes = [SessionAuthentication, BasicAuthentication]
     permission_classes = [IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ["full_name"]
+    filterset_fields = ["full_name", "region", "address", "year"]
